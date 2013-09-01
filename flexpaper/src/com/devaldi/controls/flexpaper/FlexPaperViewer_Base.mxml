@@ -6,8 +6,7 @@
 		 xmlns:fp="com.devaldi.controls.flexpaper.*" 
 		 xmlns:ct="com.devaldi.controls.*" 
 		 xmlns:st="com.devaldi.skinning.*" 
-		 borderColor="#8a8a8a" 
-		 borderThickness="1" 
+		 borderColor="#8a8a8a"
 		 verticalScrollPolicy="off"  
 		 horizontalScrollPolicy="off"
 		  
@@ -177,17 +176,17 @@
 				contextMenu.hideBuiltInItems();
 
 				if(!ReadOnly){
-					this.addEventListener(Event.COPY,copyHandler);
-					contextMenu.clipboardMenu = true;
-					contextMenu.clipboardItems.copy = true;
-					contextMenu.clipboardItems.selectAll = false;
+//					this.addEventListener(Event.COPY,copyHandler);
+//					contextMenu.clipboardMenu = true;
+//					contextMenu.clipboardItems.copy = true;
+//					contextMenu.clipboardItems.selectAll = false;
 				}
 				
-				if(new MenuIcons.SMALL_TRANSPARENT().width > 10){
-					var cmi_about:ContextMenuItem = new ContextMenuItem(resourceManager.getString("FlexPaper", "About")+' FlexPaper');
-					cmi_about.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT, showInfo);
-					contextMenu.customItems.push(cmi_about);
-				}
+//				if(new MenuIcons.SMALL_TRANSPARENT().width > 10){
+//					var cmi_about:ContextMenuItem = new ContextMenuItem(resourceManager.getString("FlexPaper", "About")+' FlexPaper');
+//					cmi_about.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT, showInfo);
+//					contextMenu.customItems.push(cmi_about);
+//				}
 				
 				if(!ReadOnly){
 					var cmi_print:ContextMenuItem = new ContextMenuItem(resourceManager.getString("FlexPaper", "Print") + " ...");
